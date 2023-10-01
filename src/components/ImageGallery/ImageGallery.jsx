@@ -98,7 +98,7 @@ export class ImageGallery extends Component {
           </ul>
         )}
         {pics.length >= 12 && <Button pics={pics} loadMore={this.loadMore} />}
-        {modal.isOpen && <Modal data={modal.data} bckgClick={this.bckgClick} user={user}/>}
+        {modal.isOpen && <Modal data={modal.data} bckgClick={this.bckgClick}/>}
       </div>
     );
   }

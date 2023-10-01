@@ -91,7 +91,6 @@ export class ImageGallery extends Component {
               <ImageGalleryItem
                 key={pic.id}
                 src={pic.webformatURL}
-                newName={pic.user}
                 onClick={() => this.openModal(pic.largeImageURL)}
               />
             ))}

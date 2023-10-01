@@ -6,7 +6,7 @@ export class ImageGalleryItem extends Component {
     const { src, newName, onClick} = this.props;
     return (
       <li className={css.item} onClick={onClick}>
-        <img src={src} alt={newName} width="300" className={css.image}/>
+        <img src={src} alt='pics' width="300" className={css.image}/>
       </li>
     );
   }

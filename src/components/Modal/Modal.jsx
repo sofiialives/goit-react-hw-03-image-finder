@@ -7,7 +7,7 @@ export class Modal extends Component {
     return (
       <div className={css.overlay} onClick={bckgClick}>
         <div className={css.modal}>
-          <img src={data} className={css.imgModal}/>
+          <img src={data} alt='descr' className={css.imgModal}/>
         </div>
       </div>
     );

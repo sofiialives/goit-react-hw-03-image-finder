@@ -91,14 +91,14 @@ export class ImageGallery extends Component {
               <ImageGalleryItem
                 key={pic.id}
                 src={pic.webformatURL}
-                user={pic.user}
+                newName={pic.user} 
                 onClick={() => this.openModal(pic.largeImageURL)}
               />
             ))}
           </ul>
         )}
         {pics.length >= 12 && <Button pics={pics} loadMore={this.loadMore} />}
-        {modal.isOpen && <Modal data={modal.data} bckgClick={this.bckgClick}/>}
+        {modal.isOpen && <Modal data={modal.data} bckgClick={this.bckgClick} alt='descr'/>}
       </div>
     );
   }
